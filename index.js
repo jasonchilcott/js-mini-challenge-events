@@ -39,7 +39,11 @@ function toggleColor(element) {
     element.style.color = "red"
   }
 }
-
+header = document.querySelector('#header')
+header.addEventListener('click', function(e){
+  const title = e.target
+  toggleColor(title)
+})
 
 /***** Deliverable 2 *****/
 
